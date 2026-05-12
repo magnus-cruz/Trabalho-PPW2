@@ -10,13 +10,24 @@ nomeInput.addEventListener('input', function() {
     nomeCartao.textContent = nomeInput.value || 'Nome do Usuário'; // Atualiza o nome ou reseta se vazio
 });
 
-// Validador de cor
+// Aplica qualquer cor CSS válida, incluindo rgb(), hex e nomes de cores
+function corValida(cor) {
+    const teste = document.createElement('option');
+    teste.style.color = '';
+    teste.style.color = cor;
+    return teste.style.color !== '';
+}
+
 corInput.addEventListener('input', function() {
-    const cor = corInput.value.toLowerCase(); // Converte para minúsculas
-    if (cor === 'vermelho' || cor === 'red') {
-        cartao.style.backgroundColor = 'red'; // Muda a cor de fundo
-    } else {
-        cartao.style.backgroundColor = ''; // Reseta a cor se não for vermelho
+    const cor = corInput.value.trim();
+
+    if (!cor) {
+        cartao.style.backgroundColor = '';
+        return;
+    }
+
+    if (corValida(cor)) {
+        cartao.style.backgroundColor = cor;
     }
 });
 
