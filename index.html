@@ -12,36 +12,36 @@
 
     <div class="container">
         <div class="painel-editor">
-            <h2>Editor de Perfil</h2>
-            
-            <div class="grupo-input">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Digite seu nome">
+            <h2>Exercício — Manipulação de DOM</h2>
+
+            <div id="cartao" class="cartao">
+                <h3 id="nome-cartao">Seu nome aqui</h3>
+                <p class="texto-descricao">Card de perfil</p>
             </div>
 
             <div class="grupo-input">
-                <label for="cor">Cor de Fundo:</label>
-                <input type="text" id="cor" placeholder="Digite uma cor">
+                <label for="nome">NOME</label>
+                <input type="text" id="nome" placeholder="Digite seu nome...">
+            </div>
+
+            <div class="grupo-input">
+                <label for="cor">COR DE FUNDO</label>
+                <input type="text" id="cor" placeholder="Tente &quot;Vermelho&quot; ou &quot;red&quot;">
             </div>
 
             <button id="modo-especial">Modo Especial</button>
-        </div>
 
-        <div class="painel-visualizacao">
-            <div id="cartao" class="cartao">
-                <h3 id="nome-cartao">Nome do Usuário</h3>
-                <p class="texto-descricao">Descrição do perfil.</p>
+            <div class="explicacao">
+                <strong>Diferença entre <code>.style</code> e <code>.classList</code>:</strong>
+                <p>Usar <code>.style.backgroundColor</code> aplica um estilo diretamente no atributo <em>inline</em> do elemento HTML,
+                ou seja, funciona como escrever <code>style="background-color: red"</code> direto na tag — é pontual,
+                sobrescreve tudo e não reutilizável. Já <code>.classList</code> trabalha com classes CSS já definidas na folha
+                de estilos: ao adicionar ou remover uma classe com <code>.toggle()</code>, você ativa um conjunto inteiro de regras
+                de uma vez, mantendo o estilo separado do código JavaScript — o que é mais organizado, fácil de manter e mais
+                próximo das boas práticas do desenvolvimento web.</p>
             </div>
         </div>
     </div>
- <!-- Parágrafo explicativo -->
-        <div class="explicacao">
-            <strong>Diferença entre <code>.style</code> e <code>.classList</code>:</strong>
-            <p>Use <code>.style</code> para aplicar um estilo inline rápido (ex.: <code>element.style.backgroundColor = 'red'</code>),
-            ideal para mudanças pontuais. Prefira <code>.classList</code> para alternar classes CSS reutilizáveis
-            (ex.: <code>element.classList.toggle('estilo-premium')</code>), pois mantém o estilo no CSS, facilita manutenção
-            e garante consistência visual.</p>
-        </div>
     <script src="js/script.js"></script>
 
 </body>
