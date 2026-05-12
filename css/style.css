@@ -108,3 +108,25 @@ button:hover {
 .estilo-premium .texto-nome {
     color: #d35400; /* Muda a cor do texto do nome no modo premium */
 }
+ /* ── PARÁGRAFO EXPLICATIVO ── */
+    .explicacao {
+      margin-top: 1.75rem;
+      padding-top: 1.25rem;
+      border-top: 1.5px solid #e0e4f0;
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: #4b5563;
+    }
+ 
+    .explicacao strong {
+      color: #1a1a2e;
+    }
+ 
+    .explicacao code {
+      background: #f0f2f5;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.84rem;
+      color: #4f46e5;
+    }

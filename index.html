@@ -34,7 +34,16 @@
             </div>
         </div>
     </div>
-
+ <!-- Parágrafo explicativo -->
+    <div class="explicacao">
+      <strong>Diferença entre <code>.style</code> e <code>.classList</code>:</strong>
+      Usar <code>.style.backgroundColor</code> aplica um estilo diretamente no atributo <em>inline</em> do elemento HTML,
+      ou seja, funciona como escrever <code>style="background-color: red"</code> direto na tag — é pontual, sobrescreve tudo e
+      não reutilizável. Já <code>.classList</code> trabalha com classes CSS já definidas na folha de estilos: ao adicionar ou
+      remover uma classe com <code>.toggle()</code>, você ativa um conjunto inteiro de regras de uma vez, mantendo o estilo
+      separado do código JavaScript — o que é mais organizado, fácil de manter e mais próximo das boas práticas do desenvolvimento web.
+    </div>
+  </div>
     <script src="js/script.js"></script>
 
 </body>
